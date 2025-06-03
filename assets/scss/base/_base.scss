@@ -29,45 +29,44 @@ body {
   font-family: "Press Start 2P";
   background-color: $color-bg;
   color: $color-white;
+  .container {
+    max-width: 1240px;
+    margin-inline: auto;
+    width: 90%;
+    color: $color-btn-hover;
+    text-align: center;
+    border: 2px solid $color-btn-bg;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .number {
+      font-size: 6rem;
+      width: 8rem;
+      height: 8rem;
+      margin: 2rem auto;
+      border: 3px solid $color-btn-bg;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $color-number-bg;
+      transition: all 0.3s ease;
+    }
+  }
 }
 
-.container {
-  max-width: 1240px;
-  margin-inline: auto;
-  width: 90%;
-  color: #ccc;
   text-align: center;
-  border: 2px solid $color-btn-bg;
+.main {
+  .guess {
+    width: 9rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: $color-input-bg;
+    border: 2px solid $color-btn-bg;
+    color: $color-btn-bg;
+  }
 }
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.number {
-  font-size: 6rem;
-  width: 8rem;
-  height: 8rem;
-  margin: 2rem auto;
-  border: 3px solid $color-btn-bg;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: $color-number-bg;
-  transition: all 0.3s ease;
-}
-
-.guess {
-  width: 9rem;
-  font-size: 2rem;
-  text-align: center;
-  padding: 0.5rem;
-  background-color: $color-input-bg;
-  border: 2px solid $color-btn-bg;
-  color: $color-btn-bg;
-}
-
 .btn {
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -91,13 +90,11 @@ h1 {
   font-size: 1.2rem;
 }
 
-/* 🔥 Game Over Animation */
 body.game-over {
   background-color: $color-error;
   animation: shake 0.4s;
 }
 
-/* ✨ Entrance Animation */
 .fade-in {
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -105,7 +102,6 @@ body.game-over {
   animation: bounceIn 1s ease;
 }
 
-/* Keyframes */
 @keyframes shake {
   0% {
     transform: translate(0);

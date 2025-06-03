@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .flex {
   display: flex;
 }
@@ -30,8 +29,7 @@ body {
   background-color: #222;
   color: #fff;
 }
-
-.container {
+body .container {
   max-width: 1240px;
   margin-inline: auto;
   width: 90%;
@@ -39,13 +37,11 @@ body {
   text-align: center;
   border: 2px solid white;
 }
-
-h1 {
+body .container h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-
-.number {
+body .container .number {
   font-size: 6rem;
   width: 8rem;
   height: 8rem;
@@ -58,7 +54,7 @@ h1 {
   transition: all 0.3s ease;
 }
 
-.guess {
+.main .guess {
   width: 9rem;
   font-size: 2rem;
   text-align: center;
@@ -91,13 +87,11 @@ h1 {
   font-size: 1.2rem;
 }
 
-/* 🔥 Game Over Animation */
 body.game-over {
   background-color: #960202;
   animation: shake 0.4s;
 }
 
-/* ✨ Entrance Animation */
 .fade-in {
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -106,7 +100,6 @@ body.game-over {
   animation: bounceIn 1s ease;
 }
 
-/* Keyframes */
 @keyframes shake {
   0% {
     transform: translate(0);
