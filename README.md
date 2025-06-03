@@ -26,7 +26,7 @@ This is a simple number guessing game built with HTML, CSS, and JavaScript. The 
 
 ## 📸 Preview
 
-![Game Screenshot](./screenshot.png)
+![Game Screenshot](file:///var/folders/00/cbjs0h1j1mq9qybh4xtcd0440000gn/T/TemporaryItems/NSIRD_screencaptureui_AYzeqE/Screenshot%202025-06-03%20at%2018.59.10.png)
 
 ---
 
