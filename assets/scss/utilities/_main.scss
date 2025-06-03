@@ -1,0 +1,14 @@
+@mixin flex-column-box{
+    .flex {
+        display: flex;
+      }
+      .justify-c {
+        justify-content: center;
+      }
+      .justify-center{
+        text-align: center;
+      }
+      .flex-column {
+        flex-direction: column;
+      }
+    }

@@ -2,23 +2,42 @@
 @use "../utilities/index" as *;
 @use "../components/index" as *;
 
+// generel classes
+
+.flex {
+  display: flex;
+}
+.justify-c {
+  justify-content: center;
+}
+.justify-center {
+  text-align: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Press Start 2P", cursive;
-  background-color: #222;
-  color: #fff;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: "Press Start 2P";
+  background-color: $color-bg;
+  color: $color-white;
 }
 
 .container {
+  max-width: 1240px;
+  margin-inline: auto;
+  width: 90%;
   color: #ccc;
   text-align: center;
-  max-width: 800px;
-  padding: 2rem;
+  border: 2px solid $color-btn-bg;
 }
 
 h1 {
@@ -28,25 +47,25 @@ h1 {
 
 .number {
   font-size: 6rem;
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   margin: 2rem auto;
-  border: 3px solid white;
+  border: 3px solid $color-btn-bg;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #333;
+  background: $color-number-bg;
   transition: all 0.3s ease;
 }
 
 .guess {
-  width: 5rem;
+  width: 9rem;
   font-size: 2rem;
   text-align: center;
   padding: 0.5rem;
-  background-color: #000;
-  border: 2px solid white;
-  color: white;
+  background-color: $color-input-bg;
+  border: 2px solid $color-btn-bg;
+  color: $color-btn-bg;
 }
 
 .btn {
@@ -55,14 +74,14 @@ h1 {
   margin-top: 1rem;
   cursor: pointer;
   font-family: inherit;
-  background-color: white;
-  color: black;
+  background-color: $color-btn-bg;
+  color: $color-input-bg;
   border: none;
   transition: 0.2s;
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background-color: $color-btn-hover;
 }
 
 .message,
@@ -74,7 +93,7 @@ h1 {
 
 /* 🔥 Game Over Animation */
 body.game-over {
-  background-color: #ff0000;
+  background-color: $color-error;
   animation: shake 0.4s;
 }
 
